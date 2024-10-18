@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSiparis"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="15dp"
+        android:onClick="siparisEt"
+        android:text="Sipariş Ver"
+        android:textColorLink="#A62222"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioIcecekler" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="299dp"
+        android:text="Ana Yemekler"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="337dp"
+        android:text="İçecekler"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkKizartma" />
+
+    <RadioGroup
+        android:id="@+id/radioAnaYiyecek"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="261dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/radioImam"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="İmam Bayıldı" />
+
+        <RadioButton
+            android:id="@+id/radioTava"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Yeşilyurt Tava" />
+
+        <RadioButton
+            android:id="@+id/radioKabab"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Adana Kebab" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkMercimek"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="261dp"
+        android:text="Mercimek Çorbası"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <CheckBox
+        android:id="@+id/checkKizartma"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="261dp"
+        android:text="Kızartma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkSalata" />
+
+    <RadioGroup
+        android:id="@+id/radioIcecekler"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="261dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <RadioButton
+            android:id="@+id/radioAyran"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Ayran" />
+
+        <RadioButton
+            android:id="@+id/radioKola"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Kola" />
+
+        <RadioButton
+            android:id="@+id/radioSalgam"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Şalgam" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="349dp"
+        android:text="Extralar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioAnaYiyecek" />
+
+    <CheckBox
+        android:id="@+id/checkSalata"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="261dp"
+        android:text="Salata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkMercimek" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/siparisBuyuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="109dp"
+        android:text="Siparişiniz"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toEndOf="@+id/radioAnaYiyecek"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/siparisList"
+        android:layout_width="197dp"
+        android:layout_height="326dp"
+        android:layout_marginTop="136dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/siparisBuyuk" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
